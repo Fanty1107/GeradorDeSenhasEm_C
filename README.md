@@ -1,6 +1,6 @@
 ## 🛠️ Como Compilar e Rodar o Projeto
 
-Este projeto foi escrito em C Padrão (Standard C) e pode ser compilado em qualquer sistema operacional (Windows, Linux ou macOS).
+Este projeto foi escrito em C puro e pode ser compilado em qualquer sistema operacional (Windows, Linux ou macOS).
 
 ### Pré-requisitos ###
 Você precisará de um compilador C instalado na sua máquina:
