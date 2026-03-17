@@ -2,32 +2,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define NUM_ALEATORIO rand() % 10 + 48
+#define ALFABETO_RAND_MA rand() % 26 + 65
+#define ALFABETO_RAND_MIN rand() % 26 + 97
+
 void preencherArrayComNumELetras(char array[], int tamanhoArray){
     //48 a 57 são numeros
     //65 a 90 alfabeto maiusculo
     //97 a 122 alfabeto minusculo
     //numero = rand() % (maximo - minimo + 1) + minimo
     
-    //1 = numero 2 = maiusculo 3 = minusculo
-    for(int i = 0; i < tamanhoArray; i++){
-        int tipo = rand() % 3 + 1;
+for(int i = 0; i < tamanhoArray; i++){
+    int tipo = rand() % 3;
+    int chanceSimbolo = rand() % 4;
 
-        switch (tipo)
-        {
-        case 1:
-            array[i] = rand() % 10 + 48;
-            break;
-        case 2:
-            array[i] = rand() % 26 + 65;
-            break;
-        case 3:
-            array[i] = rand() % 26 + 97;
-            break;                    
-        default:
-            break;
+    if(chanceSimbolo == 1){ // 25% chance de símbolo
+        array[i] = (rand() % 2) ? '@' : '&';
+    } else {
+        switch(tipo){
+            case 0: array[i] = NUM_ALEATORIO; break;
+            case 1: array[i] = ALFABETO_RAND_MA; break;
+            case 2: array[i] = ALFABETO_RAND_MIN; break;
+            }
         }
     }
-    array[tamanhoArray] = '\0'; //para realmente ser uma string ^^
+array[tamanhoArray] = '\0';
 }
 int perguntarSenha(){
     int tamanho = 0;
