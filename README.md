@@ -4,7 +4,7 @@ Este projeto foi escrito em C puro e pode ser compilado em qualquer sistema oper
 
 ### Pré-requisitos ###
 Você precisará de um compilador C instalado na sua máquina:
-* **Windows:** Recomendado usar o [MinGW (GCC para Windows)](https://www.mingw-w64.org/downloads/) ou o compilador do Visual Studio.
+* **Windows:** Recomendado usar o [MinGW (GCC para Windows)](https://www.msys2.org/) ou o compilador do Visual Studio.
 * **Linux:** O `gcc` geralmente já vem instalado. Se não, instale via terminal (ex: `sudo apt install build-essential`).
 * **macOS:** O `clang` vem embutido nas ferramentas de desenvolvedor da Apple. Instale rodando `xcode-select --install` no terminal.
 
