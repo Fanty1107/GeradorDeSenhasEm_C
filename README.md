@@ -1,4 +1,4 @@
-## 🛠️ Como Compilar e Rodar o Projeto
+##  Como Compilar e Rodar o Projeto
 
 Este projeto foi escrito em C puro e pode ser compilado em qualquer sistema operacional (Windows, Linux ou macOS).
 
